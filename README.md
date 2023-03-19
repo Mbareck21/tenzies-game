@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+### `Tenzies App`
+This is a simple web app built with React and Bootstrap that allows users to play a game of Tenzies. The app features a dice roller and allows players to click on each die to freeze it at its current value between rolls.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `Getting Started`
+To run the app, simply clone the repository and run `npm start` in the root directory. This will start the development server and open the app in your default web browser.
 
-## Available Scripts
+### `How to Play`
+Roll the dice by clicking the "Roll" button.
+Click on each die to freeze it at its current value between rolls.
+Roll again until all dice are the same value.
+Code Overview
+The app consists of two main components:
 
-In the project directory, you can run:
+### `App`
+This is the main component that handles the game logic and renders the UI. It uses the `useState` and `useEffect` hooks to manage state and update the UI as necessary. 
+The `generatenewDie`, `allNewDice`, `rollDice`, `holdDice`, and `newGame` functions handle the game logic for generating new dice, rolling the dice, freezing dice, and starting a new game.
 
-### `npm start`
+### `Die`
+This is a simple stateless functional component that renders a single die. It takes in an array of dice data and a callback function for handling clicks on the dice. The component uses the Row and Col components from Bootstrap to render the dice in a grid layout.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### `Conclusion`
+This app is a simple example of how React and Bootstrap can be used to build a web app with dynamic user interactions. 
